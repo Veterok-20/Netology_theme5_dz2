@@ -1,0 +1,29 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
+
+/**
+ * Функциональный компонент - заголовок, 
+ * возвращает заголовок в заданном стиле, который может являться ссылкой
+ * @param {string} text текст заголовка
+ * @param {string} size размер текста
+ * @param {string} url адрес ссылки, если она есть
+ * @param {string} className имя класса стилей *  
+ */
+export default function Title(props) {
+    const {text, size, url, className} = props;
+    
+}
+
+Title.propTypes = {
+    url: PropTypes.string,
+    text: PropTypes.string.isRequired,
+    size: PropTypes.string,
+    className: PropTypes.string,
+  };
+
+Title.defaultProps = {
+    url: '',
+    size: '5',
+    className: ''      
+}
